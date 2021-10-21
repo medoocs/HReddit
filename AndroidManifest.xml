@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hreddit">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".notificationForums"
+            android:parentActivityName=".myProfile"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.myProfile"/>
+        </activity>
+
+        <activity android:name=".myProfile"
+            android:parentActivityName=".homeScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.homeScreen"/>
+        </activity>
+
+        <activity android:name=".userProfile"
+            android:parentActivityName=".forumScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.forumScreen"/>
+        </activity>
+
+        <activity android:name=".newComment"
+            android:parentActivityName=".forumScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.forumScreen"/>
+        </activity>
+
+        <activity android:name=".MyComments"
+            android:parentActivityName=".homeScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.homeScreen"/>
+        </activity>
+
+        <activity android:name=".MyForums"
+            android:parentActivityName=".homeScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.homeScreen"/>
+        </activity>
+
+        <activity android:name=".PasswordChange"
+            android:parentActivityName=".homeScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.homeScreen"/>
+        </activity>
+
+        <activity android:name=".newPost"
+            android:parentActivityName=".homeScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.homeScreen"/>
+        </activity>
+
+        <activity android:name=".forumScreen"
+            android:parentActivityName=".homeScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.homeScreen"/>
+        </activity>
+
+        <activity
+            android:name=".forgotPasswordScreen"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".registerScreen"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".homeScreen"
+            android:label="Forum"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.hreddit.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
